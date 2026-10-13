@@ -1,0 +1,31 @@
+{
+  "name": "ticket-automation",
+  "version": "1.0.0",
+  "description": "Daily Jira triage and isolated AI coding automation",
+  "homepage": "https://github.com/nikhil-jain-anchor/solve-jira-ticket-automation#readme",
+  "bugs": {
+    "url": "https://github.com/nikhil-jain-anchor/solve-jira-ticket-automation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhil-jain-anchor/solve-jira-ticket-automation.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/util.js && node --check src/index.js && node --check src/jira.js && node --check src/triage.js && node --check src/worktree.js && node --check src/executor.js",
+    "test": "npm run check"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "axios": "^1.20.0",
+    "dotenv": "^18.0.7",
+    "simple-git": "^4.0.2",
+    "zod": "^4.6.5"
+  }
+}

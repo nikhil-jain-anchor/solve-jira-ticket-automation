@@ -1,0 +1,49 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "servers": {
+      "aws-mcp": { "disabled": true },
+      "atlassian": { "disabled": true },
+      "datadog": { "disabled": true }
+    }
+  },
+  "permission": {
+    "edit": "allow",
+    "read": "allow",
+    "external_directory": "deny",
+    "webfetch": "deny",
+    "websearch": "deny",
+    "question": "deny",
+    "bash": {
+      "*": "allow",
+      "git commit*": "deny",
+      "git push*": "deny",
+      "git remote*": "deny",
+      "git worktree*": "deny",
+      "git branch -D*": "deny",
+      "gh *": "deny",
+      "aws *": "deny",
+      "sam *": "deny",
+      "cdk *": "deny",
+      "terraform *": "deny",
+      "serverless *": "deny",
+      "sls *": "deny",
+      "npx sls*": "deny",
+      "npx serverless*": "deny",
+      "npm publish*": "deny",
+      "pnpm publish*": "deny",
+      "yarn publish*": "deny",
+      "psql*": "deny",
+      "mysql*": "deny",
+      "mongo*": "deny",
+      "*dynamodb*": "deny",
+      "*migrat*": "deny",
+      "*backfill*": "deny",
+      "*seed*": "deny",
+      "curl *": "deny",
+      "wget *": "deny",
+      "ssh *": "deny",
+      "scp *": "deny"
+    }
+  }
+}
